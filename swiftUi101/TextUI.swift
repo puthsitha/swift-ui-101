@@ -9,7 +9,17 @@ import SwiftUI
 
 struct TextUI: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World")
+//            .font(.headline)
+//            .fontWeight(.bold)
+//            .bold()
+//            .multilineTextAlignment(.center)
+//            .frame(width: 200, alignment: .leading
+//            )
+//            .underline(true, color: Color.red)
+//            .strikethrough(true, color: Color.green)
+//            .font(.system(size: 24, weight: .bold, design: .serif))
+//            .baselineOffset(0.5)
     }
 }
 
