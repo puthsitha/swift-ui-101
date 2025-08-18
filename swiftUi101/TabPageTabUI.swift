@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct TabPageTabUI: View {
+//    MARK: PROPERTIES
     @State private var selectedTab = "home"
     
+//    MARK: BODY
     var body: some View {
         
 //       Bottom Tab View
@@ -35,6 +37,8 @@ struct TabPageTabUI: View {
         .padding()
         .tabViewStyle(PageTabViewStyle())
     }
+    
+//    MARK: FUNCTION
 }
 
 struct HomeView: View {
