@@ -12,7 +12,8 @@ struct swiftUi101App: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            GestureUIView()
+//            GestureUIView()
+            ScheduleNotificationUIView()
         }
     }
 }
