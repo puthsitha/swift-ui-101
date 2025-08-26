@@ -7,9 +7,27 @@
 
 import SwiftUI
 
+struct RamdomModel:Hashable {
+    let tittle: String
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(tittle)
+    }
+}
+
 struct HasableUIView: View {
+    let data: [RamdomModel] = [
+        RamdomModel(tittle: "First"),
+        RamdomModel(tittle: "Second"),
+        RamdomModel(tittle: "Third")
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 20){
+            ForEach(data, id: \.self) { item in
+                Text(item.hashValue.description)
+                    .font(.headline)
+            }
+        }
     }
 }
 
